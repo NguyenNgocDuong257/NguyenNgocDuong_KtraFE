@@ -1,0 +1,255 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .ptgiaohang{
+      background-color:blue;
+    }
+    .khung {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size:20px;
+    }
+    .btn{
+       background-color:black;
+       color:white;
+       font-weight:bold;
+       margin-left:5px;
+    }
+    .tren {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .duoi {
+        display: flex;
+        text-align: center;
+        align-items:center;
+        justify-content:left;
+    }
+    .ten {
+        text-align: center;
+        align-items: center;
+        justify-content: left;
+        margin-top:10px;
+    }
+    .gia {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:5px;
+    }
+    .duoi img{
+        height:55px;
+        width:auto;
+        margin-right:5px;
+    }
+    .phanchung {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .phanbenphai a{
+        font-size:20px;
+        color:white;
+        background-color:grey;
+        text-decoration:none;
+    }
+     a{
+        font-size:25px;
+        text-decoration:none;
+        margin-top:10px;
+        color:black;
+        font-weight:bold;
+     }
+     a b{
+        font-size: 20px;
+        color:grey;
+     }
+    .ptthanhtoan {
+        background-color: yellow;
+    }
+    .luachon {
+        font-size:20px;
+        text-align: left;
+        align-items: center;   
+    }
+    .luachon ul{
+        list-style-type:none;
+    }
+    .new a{
+        border: 1px solid cornflowerblue;
+        text-decoration: none;
+        color: cornflowerblue;
+        display:inline-block;
+        font-size:22px;
+        margin-left:30px;
+        padding:5px 10px;
+    }
+    .uudaithanhtoan {
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+    .uudaithanhtoan i{
+        margin-right:3px;
+    }
+    .uudai {
+        margin-top:20px;
+        border: 1px solid cornflowerblue;
+
+    }
+    .sale {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .voucher {
+        border: 1px solid cornflowerblue;
+    }
+</style>
+<section class="container">
+    <section class="left">
+        <section class="ptgiaohang">
+            <h2>Chọn phương thức giao hàng</h2>
+            <div class="khung">
+                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />  
+                <lable>Giao hàng tiết kiệm</lable>
+                <button class="btn">-30K</button>
+            </div>
+            <fieldset>
+                <legend>
+                    Gói: Giao thứ 5, trước 19h, 26/10
+                </legend>
+                <div class="phanchung">
+                    <div class="phanbentrai">
+                        <div class="tren">
+                            <p>GIAO HÀNG TIẾT KIỆM</p>
+                            <p><del>42.000</del> 12.000</p>
+                        </div>
+                        <div class="duoi">
+                            <img src="~/Content/images/samsung.png" />
+                            <div class="ten">
+                                <p>Điện thoại Samsung Galaxy A54 5G</p>
+                                <div class="gia">
+                                    <p>SL:1</p>
+                                    <p> 8.480.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phanbenphai">
+                        <a href="#"><i class="fas fa-truck-moving"></i> Được giao bởi GIA DỤNG VIỆT</i></a>
+                    </div>
+                </div>
+            </fieldset>
+                <a href="#">Shop khuyến mãi <b>Nhập hoặc chọn mã ></b></a>
+        </section>
+        <section class="ptthanhtoan">
+            <h2>Chọn hình thức thanh toán</h2>
+            <div class="luachon">
+                <ul>
+                    <li>
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        <lable>Thanh toán tiền mặt khi nhận hàng</lable>
+                    </li>
+                    <li>
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <i class="fab fa-vuejs"></i>
+                        <lable>Thanh toán bằng ví Viettle Money</lable>
+                    </li>
+                    <li>
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <i class="fab fa-medium-m"></i>
+                        <lable>Thanh toán bằng ví Momo</lable>
+                    </li>
+                    <li>
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <i class="fab fa-cc-amazon-pay"></i>
+                        <lable>Thanh toán bằng ví ZaloPay</lable>
+                    </li>
+                    <li>
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />        
+                        <i class="fab fa-vimeo-square"></i>
+                            <lable>Thanh toán bằng VNPAY</lable>
+                    </li>
+                    <li>
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-jcb"></i>
+                        <lable>Thanh toán bằng thẻ quốc tế Visa, Master,JCB</lable>
+                    </li>
+                </ul>
+            </div>
+            <div class="new">
+                <a href="#">+ Thêm thẻ mới</a>
+            </div>
+            <div class="uudai">
+                <div class="uudaithanhtoan">
+                    <i class="fas fa-life-ring"></i>
+                    <p>Ưu đãi thanh toán thẻ</p>
+                </div>
+                <div class="sale">
+                    <div class="listvoucher">
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                    </div>
+                    <div class="listvoucher">
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                    </div>
+                    <div class="listvoucher">
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                        <div class="voucher">
+                            <h2>Freeship</h2>
+                            <p>Thẻ Shinhan platinum</p>
+                            <p><i>Không giới hạn</i></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
